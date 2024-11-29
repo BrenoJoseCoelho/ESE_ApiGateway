@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ESEApiGateway")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b0d62f5e9e2d9a9b8b1e769324a70e61582ecd21")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+17ce3fa9ff4f416ecde8f387ba8e19ac1e9a6a7d")]
 [assembly: System.Reflection.AssemblyProductAttribute("ESEApiGateway")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ESEApiGateway")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

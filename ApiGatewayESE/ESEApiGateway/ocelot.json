@@ -4,48 +4,8 @@
   },
   "Routes": [
     {
-      "UpstreamPathTemplate": "/gateway/Account",
-      "UpstreamHttpMethod": [ "Post" ],
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "host.docker.internal",
-          "Port": 8083
-        }
-      ],
-      "DownstreamPathTemplate": "/api/Account",
-      "SwaggerKey": "Identity"
-    },
-    {
-      "UpstreamPathTemplate": "/gateway/User",
-      "UpstreamHttpMethod": [ "Get", "Post" ],
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "host.docker.internal",
-          "Port": 8083
-        }
-      ],
-      "DownstreamPathTemplate": "/api/User",
-      "SwaggerKey": "Identity"
-    },
-    {
-      "UpstreamPathTemplate": "/gateway/User/{id}",
-      "UpstreamHttpMethod": [ "Get", "Delete", "Put" ],
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "host.docker.internal",
-          "Port": 8083
-        }
-      ],
-      "DownstreamPathTemplate": "/api/User/{id}",
-      "SwaggerKey": "Identity"
-    },
-    {
-      //Event
       "UpstreamPathTemplate": "/gateway/Event",
-      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "UpstreamHttpMethod": ["Get", "Post"],
       "DownstreamPathTemplate": "/api/Event",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
@@ -58,7 +18,7 @@
     },
     {
       "UpstreamPathTemplate": "/gateway/Event/{id}",
-      "UpstreamHttpMethod": [ "Get", "Delete", "Put" ],
+      "UpstreamHttpMethod": ["Get", "Delete", "Put"],
       "DownstreamPathTemplate": "/api/Event/{id}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
@@ -69,11 +29,9 @@
       ],
       "SwaggerKey": "Eventos"
     },
-
-    // Enterprise
     {
       "UpstreamPathTemplate": "/gateway/Enterprise",
-      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "UpstreamHttpMethod": ["Get", "Post"],
       "DownstreamPathTemplate": "/api/Enterprise",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
@@ -86,7 +44,7 @@
     },
     {
       "UpstreamPathTemplate": "/gateway/Enterprise/{id}",
-      "UpstreamHttpMethod": [ "Get", "Put", "Delete" ],
+      "UpstreamHttpMethod": ["Get", "Put", "Delete"],
       "DownstreamPathTemplate": "/api/Enterprise/{id}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
@@ -97,11 +55,9 @@
       ],
       "SwaggerKey": "Eventos"
     },
-    ///////////// MS Reservas  /////////
     {
-      //Participant
       "UpstreamPathTemplate": "/gateway/Participant",
-      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "UpstreamHttpMethod": ["Get", "Post"],
       "DownstreamPathTemplate": "/api/Participant",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
@@ -114,7 +70,7 @@
     },
     {
       "UpstreamPathTemplate": "/gateway/Participant/{id}",
-      "UpstreamHttpMethod": [ "Get", "Put", "Delete" ],
+      "UpstreamHttpMethod": ["Get", "Put", "Delete"],
       "DownstreamPathTemplate": "/api/Participant/{id}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
@@ -125,11 +81,9 @@
       ],
       "SwaggerKey": "Reservas"
     },
-
-    // Reservation
     {
       "UpstreamPathTemplate": "/gateway/Reservation",
-      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "UpstreamHttpMethod": ["Get", "Post"],
       "DownstreamPathTemplate": "/api/Reservation",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
@@ -142,7 +96,7 @@
     },
     {
       "UpstreamPathTemplate": "/gateway/Reservation/{id}",
-      "UpstreamHttpMethod": [ "Get", "Put", "Delete" ],
+      "UpstreamHttpMethod": ["Get", "Put", "Delete"],
       "DownstreamPathTemplate": "/api/Reservation/{id}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
@@ -152,112 +106,6 @@
         }
       ],
       "SwaggerKey": "Reservas"
-    },
-    // Promocoes
-    {
-      "UpstreamPathTemplate": "/gateway/Promotion",
-      "UpstreamHttpMethod": [ "Get", "Post" ],
-      "DownstreamPathTemplate": "/api/Promotion",
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "host.docker.internal",
-          "Port": 8084
-        }
-      ],
-      "SwaggerKey": "Promocoes"
-    },
-    {
-      "UpstreamPathTemplate": "/gateway/Promotion/{id}",
-      "UpstreamHttpMethod": [ "Get", "Put", "Delete" ],
-      "DownstreamPathTemplate": "/api/Promotion/{id}",
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "host.docker.internal",
-          "Port": 8084
-        }
-      ],
-      "SwaggerKey": "Promocoes"
-    },
-    {
-      "UpstreamPathTemplate": "/gateway/Coupon",
-      "UpstreamHttpMethod": [ "Get", "Post" ],
-      "DownstreamPathTemplate": "/api/Coupon",
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "host.docker.internal",
-          "Port": 8084
-        }
-      ],
-      "SwaggerKey": "Promocoes"
-    },
-    {
-      "UpstreamPathTemplate": "/gateway/Coupon/{id}",
-      "UpstreamHttpMethod": [ "Get", "Put", "Delete" ],
-      "DownstreamPathTemplate": "/api/Coupon/{id}",
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "host.docker.internal",
-          "Port": 8084
-        }
-      ],
-      "SwaggerKey": "Promocoes"
-    },
-    {
-      "UpstreamPathTemplate": "/gateway/Campaign",
-      "UpstreamHttpMethod": [ "Get", "Post" ],
-      "DownstreamPathTemplate": "/api/Campaign",
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "host.docker.internal",
-          "Port": 8084
-        }
-      ],
-      "SwaggerKey": "Promocoes"
-    },
-    {
-      "UpstreamPathTemplate": "/gateway/Campaign/{id}",
-      "UpstreamHttpMethod": [ "Get", "Put", "Delete" ],
-      "DownstreamPathTemplate": "/api/Campaign/{id}",
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "host.docker.internal",
-          "Port": 8084
-        }
-      ],
-      "SwaggerKey": "Promocoes"
-    },
-
-    {
-      "UpstreamPathTemplate": "/gateway/FeedbackNote",
-      "UpstreamHttpMethod": [ "Get", "Post" ],
-      "DownstreamPathTemplate": "/api/FeedbackNote",
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "host.docker.internal",
-          "Port": 8085
-        }
-      ],
-      "SwaggerKey": "Feedback"
-    },
-    {
-      "UpstreamPathTemplate": "/gateway/FeedbackNote/{id}",
-      "UpstreamHttpMethod": [ "Get", "Put", "Delete" ],
-      "DownstreamPathTemplate": "/api/FeedbackNote/{id}",
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "host.docker.internal",
-          "Port": 8085
-        }
-      ],
-      "SwaggerKey": "Feedback"
     }
   ],
   "SwaggerEndPoints": [
@@ -272,16 +120,6 @@
       ]
     },
     {
-      "Key": "Promocoes",
-      "Config": [
-        {
-          "Name": "Promocoes",
-          "Version": "v1",
-          "Url": "http://host.docker.internal:8084/swagger/v1/swagger.json"
-        }
-      ]
-    },
-    {
       "Key": "Reservas",
       "Config": [
         {
@@ -290,27 +128,6 @@
           "Url": "http://host.docker.internal:8080/swagger/v1/swagger.json"
         }
       ]
-    },
-    {
-      "Key": "Feedback",
-      "Config": [
-        {
-          "Name": "Feedback",
-          "Version": "v1",
-          "Url": "http://host.docker.internal:8085/swagger/v1/swagger.json"
-        }
-      ]
-    },
-    {
-      "Key": "Identity",
-      "Config": [
-        {
-          "Name": "Identity",
-          "Version": "v1",
-          "Url": "http://host.docker.internal:8083/swagger/v1/swagger.json",
-        }
-      ]
     }
   ]
-
 }

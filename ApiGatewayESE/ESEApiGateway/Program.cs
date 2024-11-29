@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
+using Prometheus;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,7 +24,7 @@ app.UseSwaggerForOcelotUI(opt =>
 });
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
+app.UseMetricServer();
 app.UseRouting();
 
 app.UseAuthorization();
